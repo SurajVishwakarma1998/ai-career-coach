@@ -1,0 +1,84 @@
+.coach-container {
+  max-width: 500px;
+  margin: 0px auto;
+  border-radius: 12px;
+  border: 1px solid #e5e7eb;
+  background: #ffffff;
+  display: flex;
+  flex-direction: column;
+  font-family: system-ui, -apple-system, sans-serif;
+}
+
+.coach-header {
+  padding: 16px;
+  text-align: center;
+  border-bottom: 1px solid #e5e7eb;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.coach-chat {
+  padding: 16px;
+  height: 350px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.coach-message {
+  max-width: 80%;
+  padding: 10px 14px;
+  border-radius: 12px;
+  white-space: pre-line;
+  font-size: 14px;
+}
+
+.coach-message.user {
+  align-self: flex-end;
+  background-color: #2563eb;
+  color: #ffffff;
+}
+
+.coach-message.ai {
+  align-self: flex-start;
+  background-color: #e5e7eb;
+  color: #111827;
+}
+
+.coach-typing {
+  font-size: 12px;
+  color: #6b7280;
+}
+
+.coach-input-box {
+  display: flex;
+  gap: 8px;
+  padding: 12px;
+  border-top: 1px solid #e5e7eb;
+}
+
+.coach-input-box input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #d1d5db;
+  outline: none;
+}
+
+.coach-input-box input:focus {
+  border-color: #2563eb;
+}
+
+.coach-input-box button {
+  padding: 10px 16px;
+  border-radius: 8px;
+  background-color: #2563eb;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+}
+
+.coach-input-box button:hover {
+  background-color: #1d4ed8;
+}
